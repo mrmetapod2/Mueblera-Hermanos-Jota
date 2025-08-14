@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Hermanos Jota</title>
+</head>
 <body>
+  <!-- Header -->
   <div id="header"></div>
 
   <main>
     <h1>PAGINA DE CONTACTO</h1>
   </main>
 
+  <!-- Footer -->
   <div id="footer"></div>
 
   <script>
@@ -16,7 +23,8 @@
       el.innerHTML = await res.text();
     }
 
-    loadPart("header", "header.inc.html");
-    loadPart("footer", "footer.inc.html");
+    loadPart("header", "inc/header.inc.html");
+    loadPart("footer", "inc/footer.inc.html");
   </script>
 </body>
+</html>

@@ -32,9 +32,7 @@ footer .column p {
   color: #A0522D;
 }
 
-footer .column p:hover {
-  color: #C47A6D; /* light accent */
-}
+
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
