@@ -9,14 +9,6 @@
 
   <div id="footer"></div>
 
-  <script>
-    async function loadPart(id, file) {
-      const el = document.getElementById(id);
-      const res = await fetch(file);
-      el.innerHTML = await res.text();
-    }
+  <script src="../public/js/HeaderFooterScript.js"></script>
 
-    loadPart("header", "header.inc.html");
-    loadPart("footer", "footer.inc.html");
-  </script>
 </body>
