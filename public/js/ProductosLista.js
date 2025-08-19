@@ -16,7 +16,7 @@ const productos = [
         <img src="${p.img}" alt="${p.nombre}">
         <h3>${p.nombre}</h3>
         <p class="precio">${p.precio}</p>
-        <button onclick="location.href='productos.html?id=${p.id}'">Ver más</button>
+        <button onclick="location.href='producto.html?id=${p.id}'">Ver más</button>
       `;
       contenedor.appendChild(card);
     });
