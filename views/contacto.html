@@ -4,19 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Hermanos Jota</title>
+  <link rel="stylesheet" href="../public/css/contacto.css">
 </head>
 <body>
   <!-- Header -->
   <div id="header"></div>
 
   <main>
-    <h1>PAGINA DE CONTACTO</h1>
+    <h1>Página de Contacto</h1>
+
+    <section class="contacto-section">
+      <form class="contacto-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <!-- Footer -->
   <div id="footer"></div>
 
   <script src="../public/js/HeaderFooterScript.js"></script>
-  
 </body>
 </html>
+
