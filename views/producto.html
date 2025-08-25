@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Producto</title>
+  <link rel="stylesheet" href="../public/css/styles.css">
+</head>
 <body>
+  <!-- Header dinámico -->
   <div id="header"></div>
 
-  <main>
-    <h1>PAGINA PRODUCTO INDIVIDUAL</h1>
+  <main class="producto-detalle">
+    <section class="detalle">
+      <img src="../public/img/ejemplo-mueble.jpg" alt="Nombre del Producto" class="imagen-detalle">
+      <div class="info-detalle">
+        <h1>Nombre del Producto</h1>
+        <p class="descripcion">Descripción completa del producto. Ejemplo: mueble artesanal de madera maciza, acabado premium.</p>
+        <p class="detalles"><strong>Detalles de fabricación:</strong> Madera de pino tratada, barniz ecológico, garantía 2 años.</p>
+        <p class="precio">Precio: $45.000</p>
+        <button class="btn-carrito">Añadir al Carrito</button>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer dinámico -->
   <div id="footer"></div>
 
   <script src="../public/js/HeaderFooterScript.js"></script>
-
+  <script src="../public/js/producto.js"></script>
 </body>
+</html>
