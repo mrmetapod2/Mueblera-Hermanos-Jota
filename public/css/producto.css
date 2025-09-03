@@ -4,14 +4,22 @@
   --background: #F5E6D3;
   --premium: #D4A437;
   --light: #C47A6D;
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --font-secondary: 'Playfair Display', Georgia, serif;
 } 
 
+/* Container for product detail */
 main.producto-detalle {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  font-family: var(--font-primary);
+  font-weight: 400; /* Inter Regular */
+  font-size: 12pt;
+  line-height: 1.6;
 }
 
+/* Product card */
 .detalle {
   background-color: var(--background);
   padding: 2rem;
@@ -23,12 +31,14 @@ main.producto-detalle {
   width: 100%;
 }
 
+/* Product image */
 .imagen-detalle {
   max-width: 400px;
   width: 100%;
   border-radius: 10px;
 }
 
+/* Info section */
 .info-detalle {
   flex: 1;
   display: flex;
@@ -36,23 +46,39 @@ main.producto-detalle {
   gap: 1rem;
 }
 
+/* Product title */
 .info-detalle h1 {
+  font-family: var(--font-secondary);
+  font-weight: 700; /* Playfair Display Bold for premium titles */
   font-size: 2rem;
   color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
+/* Description and details */
 .descripcion, .detalles {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: var(--font-primary);
+  font-weight: 400; /* Inter Regular */
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #333;
 }
 
+/* Price */
 .precio {
+  font-family: var(--font-primary);
+  font-weight: 500; /* Inter Medium for emphasis */
   font-size: 1.5rem;
-  font-weight: bold;
   color: var(--premium);
 }
 
+/* Add to cart button */
 .btn-carrito {
+  font-family: var(--font-primary);
+  font-weight: 500; /* Inter Medium */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   background-color: var(--brand);
   color: #fff;
   border: none;

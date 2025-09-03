@@ -20,9 +20,8 @@ if (producto) {
   imagen.src = producto.img;
   imagen.alt = producto.nombre;
   titulo.textContent = producto.nombre;
-  descripcion.textContent = `Este es el detalle completo de ${producto.nombre}. 
-  Es un producto artesanal con materiales de calidad.`;
-  detalles.innerHTML = `<strong>Detalles de fabricación:</strong> Información personalizada de ${producto.nombre}.`;
+  descripcion.textContent = ` ${producto.descripcion} `;
+  detalles.innerHTML = `${producto.detalles}.`;
   precio.textContent = `Precio: ${producto.precio}`;
 } else {
   // Si no existe el producto, mostramos un mensaje

@@ -1,17 +1,32 @@
+:root {
+  --brand: #A0522D;
+  --secondary: #87A96B;
+  --background: #F5E6D3;
+  --premium: #D4A437;
+  --light: #C47A6D;
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --font-secondary: 'Playfair Display', Georgia, serif;
+}
+
+/* Body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-primary);
+  font-weight: 400; /* Inter Regular */
+  font-size: 12pt;
   margin: 0;
 }
 
+/* Header */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #F5E6D3; /* main background */
-  border-bottom: 3px solid #D4A437; /* premium detail */
+  background-color: var(--background);
+  border-bottom: 3px solid var(--premium);
 }
 
+/* Logo */
 .logo {
   min-width: 120px;
   width: 10vw; /* grows with screen size */
@@ -21,43 +36,47 @@ header {
 .logo-link {
   display: flex;
   align-items: center;
-  justify-content: center; /* ensure logo is centered */
+  justify-content: center;
   text-decoration: none;
 }
 
+/* Navigation */
 nav {
   display: flex;
   gap: 2vw; /* grows with screen size */
 }
 
 nav a {
+  font-family: var(--font-primary);
+  font-weight: 500; /* Inter Medium for emphasis */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   text-decoration: none;
-  color: #A0522D; /* main brand color */
-  font-weight: bold;
-  font-size: calc(14px + 0.5vw); /* grows with screen size */
+  color: var(--brand);
+  font-size: calc(14px + 0.5vw);
   transition: color 0.3s ease, border-bottom-color 0.3s ease;
   padding-bottom: 2px;
-  border-bottom: 2px solid transparent; /* prevent shifting */
+  border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
-  color: #87A96B; /* secondary accent */
-  border-bottom-color: #C47A6D; /* light accent */
+  color: var(--secondary);
+  border-bottom-color: var(--light);
 }
 
- .cart-link {
+/* Cart link */
+.cart-link {
   position: relative;
   display: inline-flex;
-  align-items: center; 
+  align-items: center;
   font-size: 1.4rem;
   margin-top: -5px;
 }
 
-/* Cart icon itself */
+/* Cart icon */
 .cart-icon {
   display: inline-block;
   line-height: 1;
-  
 }
 
 /* Badge number */
@@ -67,15 +86,18 @@ nav a:hover {
   right: -12px;
   background: var(--premium);
   color: white;
+  font-family: var(--font-primary);
+  font-weight: 500; /* Inter Medium */
   font-size: 0.7rem;
-  font-weight: bold;
   padding: 2px 6px;
   border-radius: 50%;
 }
+
+/* Responsive header */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center; /* center all content */
+    align-items: center;
     padding: 10px;
   }
 
@@ -89,17 +111,15 @@ nav a:hover {
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    align-items: center; /* center nav links */
+    align-items: center;
   }
 
   nav a {
     font-size: 36px;
     text-align: center;
   }
+
   .cart-link {
-    
     margin-top: 10px;
   }
-
 }
-
