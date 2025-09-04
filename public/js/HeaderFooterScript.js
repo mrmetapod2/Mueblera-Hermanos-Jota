@@ -6,6 +6,6 @@
       el.innerHTML = await res.text();
     }
 
-    loadPart("header", "inc/header.inc.html");
-    loadPart("footer", "inc/footer.inc.html");
+    loadPart("header", "public/inc/header.inc.html");
+    loadPart("footer", "public/inc/footer.inc.html");
 
