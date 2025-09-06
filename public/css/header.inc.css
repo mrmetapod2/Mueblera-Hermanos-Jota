@@ -92,6 +92,30 @@ nav a:hover {
   padding: 2px 6px;
   border-radius: 50%;
 }
+/* Búsqueda en el header */
+.header-busqueda {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#header-busqueda-input {
+  padding: 6px 10px;
+  border: 1px solid var(--brand);
+  border-radius: 5px 0 0 5px;
+  font-size: 0.9rem;
+}
+
+#header-busqueda-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--brand);
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--brand);
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
 
 /* Responsive header */
 @media (max-width: 768px) {
