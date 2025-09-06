@@ -124,3 +124,27 @@ main {
   font-family: var(--font-primary);
   font-weight: 400; /* Inter Regular */
 }
+/* Búsqueda de productos */
+.busqueda {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#busqueda-productos {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+#btn-buscar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
