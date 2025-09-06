@@ -111,3 +111,17 @@ h1 {
 .contacto-form button:hover {
   background: var(--light);
 }
+
+/* Success message style to match textarea */
+.success-message {
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 12px;
+  margin-top: 10px;
+  color: var(--secondary);
+  background-color: #f0f8f5;
+}
