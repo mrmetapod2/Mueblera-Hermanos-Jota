@@ -92,3 +92,35 @@ main.producto-detalle {
 .btn-carrito:hover {
   background-color: var(--secondary);
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  main.producto-detalle {
+    padding: 1rem;
+  }
+
+  .detalle {
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .imagen-detalle {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .info-detalle h1 {
+    font-size: 1.5rem;
+  }
+
+  .precio {
+    font-size: 1.25rem;
+  }
+
+  .btn-carrito {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
