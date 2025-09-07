@@ -17,6 +17,9 @@ main.producto-detalle {
   font-weight: 400; /* Inter Regular */
   font-size: 12pt;
   line-height: 1.6;
+  
+  /*min-height: 100vh; */
+ 
 }
 
 /* Product card */
@@ -29,13 +32,17 @@ main.producto-detalle {
   gap: 2rem;
   max-width: 900px;
   width: 100%;
+  height: auto;
 }
 
 /* Product image */
 .imagen-detalle {
   max-width: 400px;
   width: 100%;
+  height: auto;     /* asegura ratio */
+  object-fit: contain; /* o cover, según quieras */
   border-radius: 10px;
+  flex-shrink: 0;
 }
 
 /* Info section */
@@ -106,6 +113,7 @@ main.producto-detalle {
   }
 
   .imagen-detalle {
+    
     max-width: 100%;
     width: 100%;
     margin-bottom: 1rem;

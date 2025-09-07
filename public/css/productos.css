@@ -7,6 +7,7 @@
   --light: #C47A6D;
   --font-primary: 'Inter', system-ui, sans-serif;
   --font-secondary: 'Playfair Display', Georgia, serif;
+  
 }
 
 /* Body */
@@ -18,6 +19,10 @@ body {
   line-height: 1.6;
   background: var(--background);
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  width: 100%;
 }
 
 /* Main container */
@@ -125,26 +130,27 @@ main {
   font-weight: 400; /* Inter Regular */
 }
 /* Búsqueda de productos */
-.busqueda {
+.header-busqueda {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-#busqueda-productos {
+.header-busqueda input {
   padding: 8px;
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
 }
 
-#btn-buscar {
+.header-busqueda button {
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-left: 0;
   border-radius: 0 5px 5px 0;
-  background-color: #333;
+  background-color: var(--brand); /* marrón */
   color: white;
   cursor: pointer;
 }
+
 
